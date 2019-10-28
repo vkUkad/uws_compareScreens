@@ -165,7 +165,7 @@ public class TestConfig {
     }
 
     public static String[] elementsToRemove() {
-        String[] elements = new String[9];
+        String[] elements = new String[10];
         //Using Xpath
         elements[0] = "//div[@class='fullscreen-bg js-fullscreen-bg']";
         elements[1] = "//img[@src=\"https://cdn.ukad-group.com/media/2169/image1-1.gif?width=290.4761904761905&height=500\"]";
@@ -176,6 +176,7 @@ public class TestConfig {
         elements[6] = "//p[@class='toc__title']";
         elements[7] = "//ul[@class='bib__module bib--hover bib--row-4 bib--square']";
         elements[8] = "//ul[@class='portfolio__list']";
+        elements[9] = "//div[@class='ribbon-block']";
         return elements;
     }
 
@@ -190,7 +191,7 @@ public class TestConfig {
                         return false;
                     }
                 }
-            }catch (NullPointerException e){
+            } catch (NullPointerException e) {
                 System.out.println("Null pointer exception for 'children' dereference");
             }
         }
@@ -206,7 +207,7 @@ public class TestConfig {
         javaEmail.sendEmail();
     }
 
-    public static void zipImagesFromResultsFolder(){
+    public static void zipImagesFromResultsFolder() {
         CompressToZip.compress();
     }
 }
