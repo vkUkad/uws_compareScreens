@@ -1319,7 +1319,6 @@ public class TestCompareScreens {
         CS.checkIfPagesAreDifferent(CS.getDifference(url.toString()), url.toString(), "0" + number);
     }
 
-
     @Test(description = "Creating actual screenshot and comparing screens test#100")
     public void compareScreens100() throws Exception {
         int number = 100;
