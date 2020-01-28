@@ -1333,7 +1333,7 @@ public class TestCompareScreens {
         CS.checkIfPagesAreDifferent(CS.getDifference(url.toString()), url.toString(), number + "");
     }
 
-    @Test(description = "Creating actual screenshot and comparing screens test#100")
+    @Test(description = "Creating actual screenshot and comparing screens test#101")
     public void compareScreens101() throws Exception {
         int number = 101;
         Object url = URLS().get(number);
@@ -1346,7 +1346,7 @@ public class TestCompareScreens {
         CS.checkIfPagesAreDifferent(CS.getDifference(url.toString()), url.toString(), number + "");
     }
 
-    @Test(description = "Creating actual screenshot and comparing screens test#100")
+    @Test(description = "Creating actual screenshot and comparing screens test#102")
     public void compareScreens102() throws Exception {
         int number = 102;
         Object url = URLS().get(number);
@@ -1359,7 +1359,7 @@ public class TestCompareScreens {
         CS.checkIfPagesAreDifferent(CS.getDifference(url.toString()), url.toString(), number + "");
     }
 
-    @Test(description = "Creating actual screenshot and comparing screens test#100")
+    @Test(description = "Creating actual screenshot and comparing screens test#103")
     public void compareScreens103() throws Exception {
         int number = 103;
         Object url = URLS().get(number);
@@ -1372,7 +1372,7 @@ public class TestCompareScreens {
         CS.checkIfPagesAreDifferent(CS.getDifference(url.toString()), url.toString(), number + "");
     }
 
-    @Test(description = "Creating actual screenshot and comparing screens test#100")
+    @Test(description = "Creating actual screenshot and comparing screens test#104")
     public void compareScreens104() throws Exception {
         int number = 104;
         Object url = URLS().get(number);
@@ -1385,7 +1385,7 @@ public class TestCompareScreens {
         CS.checkIfPagesAreDifferent(CS.getDifference(url.toString()), url.toString(), number + "");
     }
 
-    @Test(description = "Creating actual screenshot and comparing screens test#100")
+    @Test(description = "Creating actual screenshot and comparing screens test#105")
     public void compareScreens105() throws Exception {
         int number = 105;
         Object url = URLS().get(number);
@@ -1398,7 +1398,7 @@ public class TestCompareScreens {
         CS.checkIfPagesAreDifferent(CS.getDifference(url.toString()), url.toString(), number + "");
     }
 
-    @Test(description = "Creating actual screenshot and comparing screens test#100")
+    @Test(description = "Creating actual screenshot and comparing screens test#106")
     public void compareScreens106() throws Exception {
         int number = 106;
         Object url = URLS().get(number);
