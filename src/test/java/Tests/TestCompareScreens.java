@@ -11,6 +11,7 @@ import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 
+import static Helpers.AShotFoldersConfiguration.*;
 import static Helpers.TestConfig.*;
 
 public class TestCompareScreens {
@@ -1332,11 +1333,89 @@ public class TestCompareScreens {
         CS.checkIfPagesAreDifferent(CS.getDifference(url.toString()), url.toString(), number + "");
     }
 
+    @Test(description = "Creating actual screenshot and comparing screens test#100")
+    public void compareScreens101() throws Exception {
+        int number = 101;
+        Object url = URLS().get(number);
+        System.out.println(" Test#" + number + " " + URLS().get(number).toString());
+        openNewTab(url.toString());
+        CS.clickOkButton();
+        CS.removeElementsFromCreateExpectedScreensPages(elementsToRemove());
+        CS.writeFileToActualDir(CS.getActualScreenshotTitle(url.toString()), CS.takeScreenshot());
+        CS.readExpectedScreenshot(url.toString());
+        CS.checkIfPagesAreDifferent(CS.getDifference(url.toString()), url.toString(), number + "");
+    }
+
+    @Test(description = "Creating actual screenshot and comparing screens test#100")
+    public void compareScreens102() throws Exception {
+        int number = 102;
+        Object url = URLS().get(number);
+        System.out.println(" Test#" + number + " " + URLS().get(number).toString());
+        openNewTab(url.toString());
+        CS.clickOkButton();
+        CS.removeElementsFromCreateExpectedScreensPages(elementsToRemove());
+        CS.writeFileToActualDir(CS.getActualScreenshotTitle(url.toString()), CS.takeScreenshot());
+        CS.readExpectedScreenshot(url.toString());
+        CS.checkIfPagesAreDifferent(CS.getDifference(url.toString()), url.toString(), number + "");
+    }
+
+    @Test(description = "Creating actual screenshot and comparing screens test#100")
+    public void compareScreens103() throws Exception {
+        int number = 103;
+        Object url = URLS().get(number);
+        System.out.println(" Test#" + number + " " + URLS().get(number).toString());
+        openNewTab(url.toString());
+        CS.clickOkButton();
+        CS.removeElementsFromCreateExpectedScreensPages(elementsToRemove());
+        CS.writeFileToActualDir(CS.getActualScreenshotTitle(url.toString()), CS.takeScreenshot());
+        CS.readExpectedScreenshot(url.toString());
+        CS.checkIfPagesAreDifferent(CS.getDifference(url.toString()), url.toString(), number + "");
+    }
+
+    @Test(description = "Creating actual screenshot and comparing screens test#100")
+    public void compareScreens104() throws Exception {
+        int number = 104;
+        Object url = URLS().get(number);
+        System.out.println(" Test#" + number + " " + URLS().get(number).toString());
+        openNewTab(url.toString());
+        CS.clickOkButton();
+        CS.removeElementsFromCreateExpectedScreensPages(elementsToRemove());
+        CS.writeFileToActualDir(CS.getActualScreenshotTitle(url.toString()), CS.takeScreenshot());
+        CS.readExpectedScreenshot(url.toString());
+        CS.checkIfPagesAreDifferent(CS.getDifference(url.toString()), url.toString(), number + "");
+    }
+
+    @Test(description = "Creating actual screenshot and comparing screens test#100")
+    public void compareScreens105() throws Exception {
+        int number = 105;
+        Object url = URLS().get(number);
+        System.out.println(" Test#" + number + " " + URLS().get(number).toString());
+        openNewTab(url.toString());
+        CS.clickOkButton();
+        CS.removeElementsFromCreateExpectedScreensPages(elementsToRemove());
+        CS.writeFileToActualDir(CS.getActualScreenshotTitle(url.toString()), CS.takeScreenshot());
+        CS.readExpectedScreenshot(url.toString());
+        CS.checkIfPagesAreDifferent(CS.getDifference(url.toString()), url.toString(), number + "");
+    }
+
+    @Test(description = "Creating actual screenshot and comparing screens test#100")
+    public void compareScreens106() throws Exception {
+        int number = 106;
+        Object url = URLS().get(number);
+        System.out.println(" Test#" + number + " " + URLS().get(number).toString());
+        openNewTab(url.toString());
+        CS.clickOkButton();
+        CS.removeElementsFromCreateExpectedScreensPages(elementsToRemove());
+        CS.writeFileToActualDir(CS.getActualScreenshotTitle(url.toString()), CS.takeScreenshot());
+        CS.readExpectedScreenshot(url.toString());
+        CS.checkIfPagesAreDifferent(CS.getDifference(url.toString()), url.toString(), number + "");
+    }
+
     @AfterTest
     public void doAfterTest() {
         closeBrowser();
-        removeFolderWithObsoleteData(new File("C:\\UkadSiteTestScreens\\actual"));
-        removeFolderWithObsoleteData(new File("C:\\UkadSiteTestScreens\\diff"));
-        removeFolderWithObsoleteData(new File("C:\\UkadSiteTestScreens\\result"));
+        removeFolderWithObsoleteData(new File(actualDir));
+        removeFolderWithObsoleteData(new File(diffDir));
+        removeFolderWithObsoleteData(new File(resultDir));
     }
 }
